@@ -1,3 +1,36 @@
 /* main styles */
 :root{--bg:#fff;--fg:#222}
 body{background:var(--bg);color:var(--fg);font-family:system-ui,Arial,sans-serif}
+
+ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #6290c8;
+    font-size: large;
+}
+
+ul li{
+    float: left;
+}
+
+ul li a{
+    display: block;
+    color: #FFFCF7;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family:"Life Savers";
+}
+
+ul li a:hover{
+    background-color: #d1e6ff;
+    color: #020122;
+}
+
+.activeNavBar {
+    background-color: #cfbae1;
+    color: #643a71;
+}
