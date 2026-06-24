@@ -34,3 +34,19 @@ ul li a:hover{
     background-color: #cfbae1;
     color: #643a71;
 }
+
+/* Asia Main Page Colors */
+.asia{
+    background-color:#edadc7;
+    color:#d56a87;
+    text-align: center;
+    font-size: 30px;
+}
+#AsiaTitle{
+    text-align: center;
+    color:#ae3858;
+    font-size: 100px;
+}
+#AsiaBody{
+    color:#bcd4de;
+}
