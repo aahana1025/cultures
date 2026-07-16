@@ -2,9 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
     <title>Title</title>
+    <script>
+
+
+
+        function checkGreen(content){
+            const correctPlaceholder = document.getElementById("correctCombo");
+            if (content.innerText != "Blue and Yellow"){
+                content.style.background = "red";
+                correctPlaceholder.innerText = "Incorrect";
+            } else {
+                content.style.background = "green";
+                correctPlaceholder.innerText = "Correct";
+            }
+        }
+
+    </script>
 </head>
 <body>
 <h2>Oceania</h2>
+<div class="container">
+    <div class="section">
+        <h2>Part 1: Multiple Choice </h2>
+        <hr>
+
+        <h3>What color combination make Green?</h3><!--Change question over here-->
+        <p id="correctCombo"></p>
+        <button onclick="checkGreen(this)">Blue and Red</button><!--Change answer choice over here-->
+        <button onclick="checkGreen(this)">Red and Yellow</button><!--Change answer choice over here-->
+        <button onclick="checkGreen(this)">Blue and Yellow</button><!--Change answer choice over here-->
+        <button onclick="checkGreen(this)">Red and White</button><!--Change answer choice over here-->
+    </div>
+</div>
 </body>
 </html>
+
+
+
+
+
+
+
