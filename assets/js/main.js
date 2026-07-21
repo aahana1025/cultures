@@ -16,5 +16,7 @@ if (img && output) {
 } else {
     console.warn('Map image or output element not found', { img, output });
 }
+var coordinate;
+
 
 //const img = document.querySelector("img");

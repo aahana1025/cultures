@@ -4,6 +4,9 @@
     <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="assets/css/main.css">
     <title>Cultures</title>
+
+
+
 </head>
 
 <body>
@@ -14,7 +17,32 @@
             <li><a href = "src/pages/missionstatement.html">Mission Statement</a></li>
         </ul>
     </div>
-<script src="assets/js/main.js"></script>
+    <div id="coords">
+        style="position:absolute; background:white; border:1px solid black;
+        padding: 4px; font-family:Arial; font-size:12px;
+        pointer-events:none; z-index:1000;">
+        (0, 0)
+    </div>
+    <script>
+        window.onload = function(){
+            const img = document.querySelector("img");
+            const coords = document.getElementById("coords");
+
+            img.addEventListener("mousemove", function(e){
+                const rect = img.getBoundingClientRect();
+
+                const x = Math.round(e.clientX - rect.left);
+                const y = Math.round(e.clientY - rect.top);
+
+                coords.textContent = `(${x}, ${y})`;
+                coords.style.position = "fixed";
+                coords.style.left = (e.pageX + 15) + "px";
+                coords.style.top = (e.pageY + 15) + "px";
+            });
+        };
+
+    </script>
+
 
     <img src="assets/img/MapChart_Map.jpg" alt="World Map" usemap="#workmap" width="1450">
     <map name="workmap">
@@ -118,6 +146,11 @@
         157,662,159,662,159,670,165,669,165,670,166,670,167,668,167,670,168,669,169,667,170,667,169,666,169,666,170,666,
         171,665,172,664,172,662,172,657,175,657,175,652,177,650,178,646,178,644,177,643,177,642,177,639,175,634,175,633,
         175,633,174,636,173,636,173,636,173,637,172,636,171,635,171,635,170,635,169,633,169,631,169,629,170,627,168"
+              alt="Europe" href="src/pages/Europe.html">
+        <!-- Norwegian Area -->
+        <area shape="poly" coords="766,62,768,61,770,63,770,64,772,66,774,67,773,68,772,68,771,67,770,66,769,65,768,64,767,62"
+              alt="Europe" href="src/pages/Europe.html">
+        <area shape="poly" coords="793,70,789,70,788,70,787,70,786,71,784,71,782,71,781,71,780,71,779,70,780,68,781,68,785,68,787,67,789,66,791,65,787,65,784,66,781,67,777,67,775,65,772,63,771,61,770,59,769,57,768,55,768,55,768,53,770,53,772,52,774,52,778,52,780,52,781,53,781,54,778,54,775,55,778,55,774,55,781,55,783,53,785,53,787,55,787,57,790,59,789,57,788,53,788,52,790,50,792,51,793,51,795,52,798,54,799,54,801,55,801,57,803,58,804,59,806,59,809,59,812,61,814,64,818,67,819,67,823,69,821,73,819,75,815,76,815,76,809,74,809,73,809,68,808,67,806,65,804,65,801,65,802,67,802,68,801,69,799,73,795,77,794,79,794,81,792,81"
               alt="Europe" href="src/pages/Europe.html">
     </map>
 </body>
