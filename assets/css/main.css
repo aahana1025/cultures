@@ -34,23 +34,3 @@ ul li a:hover{
     background-color: #cfbae1;
     color: #643a71;
 }
-
-hr{
-    border: none;
-    height: 5px;
-    background-color: #6290c8;
-}
-
-.container{
-    display: flex;
-    background-color: #643a71;
-    justify-content: center;
-    align-items: center;
-}
-
-.container div{
-    background-color: #FFFCF7;
-    margin: 8px;
-    padding: 12px;
-    font-size: 16px;
-}
